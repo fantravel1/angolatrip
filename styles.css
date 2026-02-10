@@ -76,7 +76,56 @@ body {
 }
 
 .hero {
+  padding: 0;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.hero-image-container {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.hero-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(3, 16, 33, 0.4), rgba(2, 9, 22, 0.6));
+  z-index: 1;
+}
+
+.hero-content {
   padding: 1.1rem 0 1.6rem;
+}
+
+.hero-image-credit {
+  font-size: 0.7rem;
+  color: var(--muted);
+  opacity: 0.6;
+  margin-top: 0.3rem;
+}
+
+.section-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.8rem;
+  margin: 1rem 0;
+  display: block;
+  border: 1px solid var(--line);
 }
 
 .top-nav {
@@ -84,6 +133,8 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  position: relative;
+  z-index: 2;
 }
 
 .brand {
@@ -528,6 +579,10 @@ footer {
 @media (min-width: 48rem) {
   .wrap {
     width: min(100% - 2rem, var(--max));
+  }
+
+  .hero-image-container {
+    height: 380px;
   }
 
   .nav-links {
