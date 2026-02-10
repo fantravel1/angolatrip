@@ -365,6 +365,155 @@ summary {
   font-weight: 700;
 }
 
+/* Trip Cards */
+.trip-card {
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 0.8rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, rgba(17, 45, 79, 0.6), rgba(7, 24, 45, 0.8));
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.trip-card:hover {
+  border-color: var(--primary);
+  background: linear-gradient(135deg, rgba(17, 45, 79, 0.8), rgba(7, 24, 45, 0.95));
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(76, 224, 176, 0.15);
+}
+
+.trip-duration {
+  margin: 0 0 0.3rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--primary);
+}
+
+.trip-card h3 {
+  margin: 0.2rem 0 0.4rem;
+  font-size: 1.1rem;
+  color: var(--text);
+}
+
+.trip-desc {
+  margin: 0.3rem 0 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.trip-meta {
+  margin: 0.5rem 0 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--primary);
+  opacity: 0.9;
+}
+
+/* Experience Cards */
+.exp-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid var(--line);
+  border-radius: 0.8rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.exp-card:hover {
+  border-color: var(--primary);
+  background: rgba(76, 224, 176, 0.08);
+  transform: translateY(-2px);
+}
+
+.exp-icon {
+  font-size: 2.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.exp-card h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--text);
+}
+
+.exp-card p {
+  margin: 0.4rem 0 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* Feature Boxes */
+.feature-box {
+  border: 1px solid var(--line) !important;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.feature-box h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+}
+
+.feature-box p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* Navigation Cards */
+.nav-card {
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 0.8rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.nav-card:hover {
+  border-color: var(--primary);
+  background: rgba(76, 224, 176, 0.08);
+  transform: translateX(4px);
+}
+
+.nav-card h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.nav-card p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* Language Row Links */
+.lang-row a {
+  text-decoration: none;
+}
+
+.lang-row span {
+  display: inline-block;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.lang-row a:hover span {
+  border-color: var(--primary);
+  background: rgba(76, 224, 176, 0.15);
+  transform: scale(1.05);
+}
+
 footer {
   border-top: 1px solid rgba(180, 210, 245, 0.3);
   margin-top: 1.2rem;
